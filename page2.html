@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body, h1, h2, h3, h4, h5, h6 {font-family: "Karma", sans-serif}
+        .w3-bar-block .w3-bar-item {padding:20px}
+        .responsive-img {max-width: 100%; height: auto;}
+
+        /* Media Query for larger screens */
+        @media screen and (min-width: 1600px) {
+            .w3-main, .w3-top .w3-white {
+                max-width: 1600px; /* Increased max width */
+            }
+            .w3-container, h1, h2, h3, h4, h5, h6 {
+                font-size: larger; /* Larger font sizes for larger screens */
+            }
+            /* Additional styling adjustments for larger screens can be added here */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close Menu</a>
+  <a href="page2.html" onclick="w3_close()" class="w3-bar-item w3-button">Arts & Crafts</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:100%;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div class="w3-right w3-padding-16"></div>
+    <div class="w3-center w3-padding-16">DIY Crafts Haven</div>
+  </div>
+</div>
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="art">
+    <div class="w3-quarter">
+      <a href= "adultflower.html">
+      <img src="https://craftsbyamanda.com/wp-content/uploads/2021/08/sunflower-welcome-sign-V01.jpg" style="width:65%">
+      <h3>Sunflower Welcome Sign</h3>
+    </a>
+      <p>Style your front porch for fall or summer with an eye-catching homemade sunflower welcome sign. It’s a lovely statement piece to ring in the crisp, colorful season!</p>
+    </div>
+    <div class="w3-quarter">
+      <a href = "adultlavender.html">
+      <img src="https://craftsbyamanda.com/wp-content/uploads/2021/02/lavender-bath-bombs-SQ-768x768.jpg" style="width:97% ">
+      <h3>Lavender Bath Bombs</h3>
+    </a>
+      <p>Pop a lavender bath bomb into the bathtub to fizzle and dissipate, filling the room with the soothing and relaxing scent of lavender.</p>
+    </div>
+    <div class="w3-quarter">
+      <a href = "adultcoasters.html">
+      <img src="https://craftsbyamanda.com/wp-content/uploads/2019/07/mason-jar-lid-coasters-680.jpg" alt="Cherries" style="width:100%">
+      <h3>Mason Jar Lid Coasters</h3>
+    </a>
+      <p>Got leftover mason jar lids from all of those mason jar crafts? Make mason jar lid coasters! This easy DIY project is perfect for those that love farmhouse style. </p>
+    </div>
+    <div class="w3-quarter">
+      <a href = "adultwine.html">
+      <img src="https://craftsbyamanda.com/wp-content/uploads/2017/02/wine-cork-planters-1-500x500.jpg" alt="Pasta and Wine" style="width:97%">
+      <h3>Wine Cork Succulent Magnets</h3>
+    </a>
+      <p>These cute and colorful wine cork succulent magnets make your refrigerator extra charming. Even not-so-green thumbs can easily make these.</p>
+    </div>
+  </div>
+  
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="index.html" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="index.html" class="w3-bar-item w3-button w3-hover-black">1</a>
+      <a href="page2.html" class="w3-bar-item w3-black w3-button">2</a>
+    </div>
+  </div>
+  
+  <hr id="about">
+
+<!-- Enhanced About Section -->
+<div class="w3-container w3-padding-32 w3-center">  
+    <h3>About Me</h3>
+    <img src="https://clarkepride.com/sports/mbowl/2021-22/photos/0001/Mannix_Amos.jpg?max_width=600&max_height=800" alt="Me" class="w3-image about-img" style="width:300px; height:350px;">
+    <div class="w3-padding-32 about-text">
+      <h4><b>Embarking on a Creative Odyssey</b></h4>
+      <p>Welcome to my world of DIY crafts, a space where creativity knows no bounds and every project is a story waiting to be told. As a web design student, I've found a unique intersection between the tactile beauty of handcrafted art and the boundless possibilities of the digital landscape. This website is more than just a collection of projects; it's a testament to the joy of creation, an invitation to explore the art of making, and a celebration of imagination.</p>
+      <p>From the simple pleasure of transforming everyday materials into something magical, to the intricate challenge of coding this very site, my journey is about bridging worlds. Each craft shared here is a piece of my heart, meticulously designed to inspire, delight, and perhaps ignite a spark of creativity in you.</p>
+      <p>So, whether you're here to find your next project or just to explore, I'm thrilled to have you on this journey with me. Let's create something beautiful together.</p>
+    </div>
+</div>
+
+<hr>
+  
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>

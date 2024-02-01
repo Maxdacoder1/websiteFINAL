@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+    <link rel="stylesheet" href="style.css"> <!-- Link to your external CSS file -->
+
+    <!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close Menu</a>
+    <a href="index.html#food" onclick="w3_close()" class="w3-bar-item w3-button">Arts & Crafts</a>
+    <a href="index.html#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+    <div class="w3-white w3-xlarge">
+        <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+        <div class="w3-center w3-padding-16">DIY Crafts Haven</div>
+    </div>
+</div>
+
+<script>
+    // Script to open and close sidebar
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+    }
+     
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+    }
+</script>
+</head>
+<div class="w3-container media-container">
+    <!-- Image -->
+    <div class="image-container">
+        <img src="https://www.redtedart.com/wp-content/uploads/2017/10/Paper-Box-DIY-Strawberry.jpg">
+    </div>
+
+    <!-- Video Embed -->
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/exI2XUVL6ds?si=P_P7Is9kHoaVN0yT" allowfullscreen></iframe>
+    </div>
+</div>
+
+<body>
+
+    <strong>DIY Paper Box Strawberry</strong>
+    <h2>Materials Needed:</h2>
+    <ul>
+        <li>Red paper (construction paper preferred)</li>
+        <li>Green paper (for leaves)</li>
+        <li>Black marker or pen (for seeds)</li>
+        <li>Scissors</li>
+        <li>Glue or double-sided tape</li>
+        <li>Ruler (optional)</li>
+        <li>Pencil (for tracing and marking)</li>
+    </ul>
+    <h2>Instructions:</h2>
+    <ol>
+        <li>Cut a square piece of red paper to start your box.</li>
+        <li>Fold the paper in half diagonally, unfold, and repeat in the other direction.</li>
+        <li>Bring each corner of the square to the center of the paper.</li>
+        <li>Fold each side's point to the edge of the central square and secure with glue or tape.</li>
+        <li>Draw seed-like dots over the red paper with a black marker.</li>
+        <li>Cut and attach a small piece of green paper on top to represent leaves.</li>
+        <li>Gently open the folds to create a box shape.</li>
+        <li>Make any final adjustments and add additional decorations as desired.</li>
+    </ol>
+
+</body>
+</html>

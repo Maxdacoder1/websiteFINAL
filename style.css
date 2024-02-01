@@ -1,0 +1,75 @@
+body, h1, h2, h3, h4, h5, h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+.media-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+.media-container > div {
+    margin: 10px;
+}
+.video-container iframe {
+    width: 600px; /* Adjust as needed */
+    height: 489px; /* Adjust as needed */
+}
+.image-container img {
+    width: 80%; /* Adjust as needed */
+}
+/* Larger Screen Adjustments */
+@media screen and (min-width: 1200px) {
+    .w3-top .w3-white {
+        max-width: 90%; /* More flexible width */
+    }
+    .w3-bar-item, .w3-button {
+        padding: 30px 20px; /* Larger padding for larger screens */
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-size: larger; /* Larger text for larger screens */
+    }
+}
+/* Styles for Sidebar */
+.w3-sidebar {
+    display: none; /* Initially hidden */
+    z-index: 2;
+    width: 40%;
+    min-width: 300px;
+}
+
+/* Styles for Top Menu */
+.w3-top .w3-white {
+    max-width: 100%;
+    margin: auto;
+}
+
+.w3-quarter a {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Optional: ensures the link color matches the surrounding text or default */
+  }
+
+  .w3-quarter a:hover h3 {
+    color: green; /* Optional: change to desired hover color */
+  }
+
+  .w3-quarter h3 {
+    cursor: pointer; /* Changes cursor to indicate clickable */
+  }
+
+  .about-text {
+    text-align: left; /* Aligns text to the left for a more traditional read */
+    max-width: 800px; /* Ensures text is not too wide for easy reading */
+    margin: auto; /* Centers the text block */
+}
+
+.about-img {
+    border: 5px solid #f1f1f1; /* Adjust color as needed */
+    border-radius: 50%; /* Keeps the image round */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Adds depth with shadow */
+    width: 200px; /* Adjust size as needed */
+    height: 200px; /* Adjust size as needed */
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Centers the image */
+}
+
